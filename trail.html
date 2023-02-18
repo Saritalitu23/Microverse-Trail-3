@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+      body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #eee;
+}
+
+#logo-img {
+  width: 24%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.nav-list li {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: fixed;
+  overflow: hidden;
+  background-color: #eee;
+  margin-top: 0;
+}
+
+.intro {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+#mailing {
+ width: 260px;
+ height: 24px;
+}
+
+#starting {
+  width: 150px;
+  background-color: #f1c40f;
+  border: 0.01px solid #f1c40f;
+}
+
+.first-intro {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+i {
+  color: darkorange;
+  margin-top: 20px;
+}
+
+.second-intro {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  width: 70%;
+}
+
+.third-intro {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  width: 70%;
+ }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.discr {
+  margin-top: -18px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.video-out {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 50%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+
+.fst {
+  border: 1px solid #000;
+  width: 310px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second {
+  border: 1px solid #000;
+  width: 310px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third{
+  border: 1px solid #000;
+  width: 310px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  background-color: rgb(234, 225, 225);
+  width: 100%;
+  height: 10%;
+  padding-top: 20px;
+  margin-top: 0;
+  text-align: center;
+}
+
+h4 {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+ol {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -10px;
+}
+
+ol li {
+  font-size: 15px;
+  font-weight: 250;
+}
+
+.card-button {
+  background-color: #f1c40f;
+  width: 120px;
+  height: 40px;
+  border: 0.01px solid #f1c40f;
+  border-radius: 3px;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+footer {
+  margin: 0 auto;
+  background-color: rgb(220, 220, 220);
+  width: 76%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px 10px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.footer-list li {
+  list-style-type: none;
+}
+
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="land.css">
+  <title>Landing-page</title>
+</head>
+<body>
+  <header>
+    <img id="logo-img" src="./Image/product-landing-page-logo.png" alt="landing-logo">
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="#">Features</a>
+        </li>
+        <li>
+          <a href="#">How it works</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="intro">
+    <h1>Handcrafted, home-made masterpieces</h1>
+    <label for="email">
+      <input id="mailing" type="email" name="mail" id="mail" placeholder="Enter your email address">
+    </label>
+    <button id="starting">GET STARTED</button>
+  </div>
+  <div class="body">
+    <div class="first-intro">
+      <i class="fa fa-3x fa-fire" aria-hidden="true"></i>
+      <div>
+        <h2>Premium Materials</h2>
+        <p class="discr">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+      </div>
+    </div>
+    <div class="second-intro">
+      <i class="fa fa-3x fa-truck"></i>
+      <div>
+        <h2>Fast Shipping</h2>
+        <p class="discr">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </div>
+    </div>
+    <div class="third-intro">
+      <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+      <div>
+        <h2>Quality Assurance</h2>
+        <p class="discr">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+      </div>
+    </div>
+  </div>
+  <section class="video-out">
+    <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+  </section>
+  <section class="cards">
+    <div class="fst">
+      <h3>TENOR TROMBONE</h3>
+      <h4>$600</h4>
+      <ol>
+        <li>
+          Lorem ipsum.
+        </li>
+        <li>
+          Lorem ipsum.
+        </li>
+        <li>
+          Lorem ipsum dolor.
+        </li>
+        <li>
+          Lorem ipsum.
+        </li>
+      </ol>
+      <button class="card-button">SELECT</button>
+    </div>
+    <div class="second">
+      <h3>BASS TROMBONE</h3>
+      <h4>$900</h4>
+      <ol>
+        <li>
+          Lorem ipsum.
+        </li>
+        <li>
+          Lorem ipsum.
+        </li>
+        <li>
+          Lorem ipsum dolor.
+        </li>
+        <li>
+          Lorem ipsum.
+        </li>
+      </ol>
+      <button class="card-button" >select</button>
+      
+    </div>
+    <div class="third">
+      <h3>VALVE TROMBONE</h3>
+      <h4>$1200</h4>
+      <ol>
+        <li>
+          Plays similar to a Trumpet
+        </li>
+        <li>
+          Great for Jazz Bands
+        </li>
+        <li>
+          Lorem ipsum dolor.
+        </li>
+        <li>
+          Lorem ipsum.
+        </li>
+      </ol>
+      <button class="card-button">select</button>
+    </div>
+  </section>
+  <footer>
+    <ul class="footer-list">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <span>Copyright 2016, Original Trombones</span>
+  </footer>
+</body>
+</html>
